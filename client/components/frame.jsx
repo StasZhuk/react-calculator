@@ -9,6 +9,8 @@ class Frame extends Component {
             question: '',
             answer: '',
         }
+
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick(e) {
@@ -69,7 +71,7 @@ class Frame extends Component {
                     <Button label={'9'} handleClick={this.handleClick} type="input" />
                     <Button label={'.'} handleClick={this.handleClick} type="input" />
                     <Button label={'0'} handleClick={this.handleClick} type="input" />
-                    <Button label={'Cls'} handleClick={this.handleClick} type="action" />
+                    <Button label={'Cls'} handleClick={this.handleClick} type="action" className="button clear-button" />
                     <Button label={'='} handleClick={this.handleClick} type="action" />
                 </div>
             </div>
